@@ -24,11 +24,17 @@ gem "sqlite3", "~> 1.4"
 # https://github.com/jarmo/require_all
 gem "require_all"
 
+gem 'thin', '~> 1.8', '>= 1.8.1'  
+gem 'puma', '~> 5.6', '>= 5.6.5'  
+gem 'falcon', '~> 0.42.3' 
+gem 'webrick', '~> 1.7'  
+gem 'psych', '~> 4.0', '>= 4.0.4'
+
 # These gems will only be used when we are running the application locally
 group :development do
   # Used to generate seed data
   # https://github.com/faker-ruby/faker
-  gem "faker", "~> 2.18"
+gem 'faker', '~> 2.23'  
 
   # Auto-reload the server when files are changed
   # https://github.com/alexch/rerun
